@@ -1,0 +1,1819 @@
+/* 
+    Created on : Mar 6, 2018, 10:07:57 AM
+    Author     : Zunayed Hassan
+*/
+/* Usage: font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+
+/* Usage: font-family: 'Ubuntu Mono', monospace; */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.aiom-adwaita-ui-box-shadow {
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Pane */
+.aiom-adwaita-ui-pane {
+    background: #e8e8e7;
+    padding: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    color: #2d3335;
+}
+
+/* Button (Regular) */
+.aiom-adwaita-ui-button {
+    text-align: center;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-radius: 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #2d3335;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 3.25em;
+}
+
+.aiom-adwaita-ui-button:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-button:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-button:focus {
+    border: 1px solid #0095ff;
+    box-shadow: 0px 0px 1.5px 0px #0095ff; 
+}
+
+/* Button Primary */
+.aiom-adwaita-ui-button-primary {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    background: linear-gradient(180deg, #92bce8 0.0%, #2b77c6 100.0%);
+    border-radius: 0.25em;
+    border-top: 1px solid #215d9c;
+    border-left: 1px solid #215d9c;
+    border-right: 1px solid #215d9c;
+    border-bottom: 1px solid #184472;
+    color: #ffffff;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 3.25em;
+}
+
+.aiom-adwaita-ui-button-primary:hover {
+    background: linear-gradient(180deg, #619fde 0.0%, #2b87e6 100.0%);
+}
+
+.aiom-adwaita-ui-button-primary:active {
+    background: #3180df;
+}
+
+/* Button Disabled */
+.aiom-adwaita-ui-button-disabled {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    background: #ececec;
+    border-radius: 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #808080;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    cursor: default;
+    line-height: 3.25em;
+}
+
+.aiom-adwaita-ui-button-disabled:hover {
+    cursor: default;
+}
+
+/* Toggle Button */
+.aiom-adwaita-ui-toggle-button {
+    text-align: center;
+    line-height: 3.25em;
+}
+
+.aiom-adwaita-ui-toggle-button[data-checked="false"] {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-radius: 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #2d3335;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+.aiom-adwaita-ui-toggle-button[data-checked="true"] {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    background: #d9d9d7;
+    border-radius: 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #2d3335;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+.aiom-adwaita-ui-toggle-button[data-checked="false"]:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-toggle-button:focus {
+    border: 1px solid #0095ff;
+    box-shadow: 0px 0px 1.5px 0px #0095ff; 
+}
+
+/* Toggle Group */
+.aiom-adwaita-ui-toggle-group > .aiom-adwaita-ui-toggle-button:not(:first-child) {
+    margin-left: -0.30em;
+}
+
+.aiom-adwaita-ui-toggle-group > .aiom-adwaita-ui-toggle-button {
+    border-radius: 0;
+}
+
+.aiom-adwaita-ui-toggle-group > .aiom-adwaita-ui-toggle-button:first-child {
+    border-radius: 0.25em 0em 0em 0.25em;
+}
+
+.aiom-adwaita-ui-toggle-group > .aiom-adwaita-ui-toggle-button:last-child {
+    border-radius: 0em 0.25em 0.25em 0em;
+}
+
+.aiom-adwaita-ui-toggle-group > .aiom-adwaita-ui-toggle-button:focus {
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    box-shadow: none;
+}
+
+/* Toggle Switch */
+.aiom-adwaita-ui-toggle-switch,
+.aiom-adwaita-ui-toggle-switch * {
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-toggle-switch input[type="checkbox"] {
+    display: none;
+}
+
+.aiom-adwaita-ui-toggle-switch,
+.aiom-adwaita-ui-toggle-switch label {
+    position: relative;
+    width: 90px;
+    height: 28px;
+}
+
+.aiom-adwaita-ui-toggle-switch label {
+    position: relative;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-toggle-switch-slider {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    border-radius: 0.25em;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cfcfcd;
+    border: 1px solid #b6b6b3;
+    transition: .4s;
+}
+
+.aiom-adwaita-ui-toggle-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 45px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #f4f4f4 0.0%, #ededec 100.0%);
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    border-radius: 0.25em;
+    transition: transform .4s;
+}
+
+.aiom-adwaita-ui-toggle-switch-slider:hover:before {
+    background: linear-gradient(180deg, #f4f4f4 0.0%, #f9f9f9 100.0%);
+}
+
+.aiom-adwaita-ui-toggle-switch-slider:active:before {
+    background: #fbfbfb;
+}
+
+.aiom-adwaita-ui-toggle-switch input:checked + .aiom-adwaita-ui-toggle-switch-slider:before {
+    transform: translateX(43px);
+}
+
+.aiom-adwaita-ui-toggle-switch input:checked + .aiom-adwaita-ui-toggle-switch-slider {
+    background: #4a90d9;
+    border-color: #184472;
+}
+
+.aiom-adwaita-ui-toggle-switch-label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 0.9em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.aiom-adwaita-ui-toggle-switch-label:last-child {
+    margin-left: 1.7em;
+    color: #2d3335;
+    text-shadow: none;
+}
+
+/* Label */
+.aiom-adwaita-ui-label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-label-disabled {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-toolbar {
+    padding: 0em 1em 0em 1em;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-bottom: 1px solid #c2c1be;
+    vertical-align: baseline;
+}
+
+.aiom-adwaita-ui-toolbar-separator {
+    height: 24px;
+    display: inline-block;
+    border-left: 1px solid #c4c5bf;
+    border-right: 1px solid #fcfcfc;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    margin-top: 0px;
+    margin-bottom: -8px;
+    padding: 0px;
+}
+
+/* Spinner */
+.aiom-adwaita-ui-spinner {
+    display: inline-block;
+    height: 34px;
+    padding: 0px;
+    vertical-align: top;
+    border-radius: 0.25em;
+    line-height: 3.25em;
+}
+
+.aiom-adwaita-ui-spinner input[type="text"] {
+    border: none;
+    height: 34px;
+    width: 64px;
+    max-height: 30px;
+    max-width: 64px;
+    min-height: 30px;
+    min-width: 64px;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    margin: 0;
+    border-radius: 0.25em 0 0 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-bottom: 1px solid #b6b6b3;
+    text-align: center;
+    vertical-align: top;
+}
+
+.aiom-adwaita-ui-spinner-step-down,
+.aiom-adwaita-ui-spinner-step-up {
+    cursor: pointer;
+    height: 34px;
+    width: 52px;
+    max-height: 34px;
+    max-width: 52px;
+    min-height: 34px;
+    min-width: 52px;
+    padding: 0px;
+    margin-left: -0.3em;
+    border-radius: 0;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #2d3335;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    outline: none;
+    vertical-align: top;
+    padding: 0em;
+}
+
+.aiom-adwaita-ui-spinner-step-up {
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+.aiom-adwaita-ui-spinner-step-down:hover,
+.aiom-adwaita-ui-spinner-step-up:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-spinner-step-down:active,
+.aiom-adwaita-ui-spinner-step-up:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-spinner-step-down:active,
+.aiom-adwaita-ui-spinner-step-up:active {
+    outline: none;
+}
+
+/* Accordion and Titled Pane */
+.aiom-adwaita-ui-accordion {
+    padding: 4px;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-titled-pane-title {
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-top: 1px solid #b6b6b3;
+    border-bottom: 1px solid #b6b6b3;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0px 0px -1px 0px;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-titled-pane-title span {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.aiom-adwaita-ui-titled-pane[data-collapse="true"] .aiom-adwaita-ui-titled-pane-title:before {
+    content: '▸';
+}
+
+.aiom-adwaita-ui-titled-pane[data-collapse="false"] .aiom-adwaita-ui-titled-pane-title:before {
+    content: '▾';
+}
+
+.aiom-adwaita-ui-titled-pane-title:before {
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-titled-pane-title:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-titled-pane-title:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-titled-pane {
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #b6b6b3;
+    border-radius: 0.25em;
+    margin: 0 0 -1px 0;
+}
+
+.aiom-adwaita-ui-titled-pane-contents {
+    overflow: hidden;
+    border-radius: 0.25em;
+    transition: all 0.4s;
+}
+
+/* TabPane, Tab */
+/* Tab: Top */
+.aiom-adwaita-ui-tabpane {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    min-height: 256px;
+}
+
+.aiom-adwaita-ui-tabs {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    vertical-align: top;
+    border-bottom: 1px solid #b6b6b3;
+    height: 34px;
+    background: #e8e8e7;
+}
+
+.aiom-adwaita-ui-tabs li {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border: 1px solid #b6b6b3;
+    box-sizing: border-box;
+    height: 33px;
+}
+
+.aiom-adwaita-ui-tab:hover {
+    border-top: 2px solid #a7a7a7;
+    background: #d0d0d0;
+}
+
+.aiom-adwaita-ui-tab[data-selected="true"] {
+    border-top: 3px solid #4a90d9;
+    border-bottom: none;
+    height: 35px;
+}
+
+.aiom-adwaita-ui-tab-add {
+    border: 1px solid #b6b6b3 !important;
+    margin-left: 0.25em !important;
+    width: 28px !important;
+    height: 28px !important;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%) !important;
+    padding: 0.25em 0.5em !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    padding: 5px !important;
+}
+
+.aiom-adwaita-ui-tab-add:hover {
+    background: #d0d0d0 !important;
+}
+
+.aiom-adwaita-ui-tabs li:not(:first-child) {
+    margin-left: -0.3em;
+}
+
+.aiom-adwaita-ui-tabs li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.aiom-adwaita-ui-tab-contents {
+    position: relative;
+    border-top: 1px solid #b6b6b3;
+    margin-top: 8px
+}
+
+.aiom-adwaita-ui-tab-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    transition: all 0.4s;
+}
+
+/* Tab: Bottom */
+.aiom-adwaita-ui-tabpane-bottom {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    min-height: 256px;
+}
+
+.aiom-adwaita-ui-tabs-bottom {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    vertical-align: top;
+    border-top: 1px solid #b6b6b3;
+    height: 34px;
+    background: #e8e8e7;
+    position: relative;
+}
+
+.aiom-adwaita-ui-tabs-bottom li {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border: 1px solid #b6b6b3;
+    box-sizing: border-box;
+    height: 33px;
+    margin-top: -2px;
+}
+
+.aiom-adwaita-ui-tab-bottom:hover {
+    border-bottom: 2px solid #a7a7a7;
+    background: #d0d0d0;
+}
+
+.aiom-adwaita-ui-tab-bottom[data-selected="true"] {
+    border-bottom: 3px solid #4a90d9;
+    border-top: none;
+    height: 35px;
+}
+
+.aiom-adwaita-ui-tabs-bottom li:not(:first-child) {
+    margin-left: -0.3em;
+}
+
+.aiom-adwaita-ui-tabs-bottom li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.aiom-adwaita-ui-tab-contents-bottom {
+    position: relative;
+    border-bottom: 1px solid #b6b6b3;
+    margin-bottom: 8px;
+    min-height: 256px;
+}
+
+.aiom-adwaita-ui-tab-content-bottom {
+    background: #ececec;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+/* Tab: Left */
+.aiom-adwaita-ui-tabpane-left {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    height: 300px;
+}
+
+.aiom-adwaita-ui-tabs-left {
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    margin-top: 0;
+}
+
+.aiom-adwaita-ui-tab-left {
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border: 1px solid #b6b6b3;
+    margin: 0;
+    height: 80px;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-tab-left:hover {
+    border-left: 2px solid #a7a7a7;
+    background: #d0d0d0;
+}
+
+.aiom-adwaita-ui-tab-left[data-selected="true"] {
+    border-right: 1px solid transparent;
+    border-left: 3px solid #6495ED;
+}
+
+.aiom-adwaita-ui-tab-left:not(:first-child) {
+    margin-top: -1px;
+}
+
+.aiom-adwaita-ui-tab-left a {
+    display: block;
+    transform: translateY(200%) rotate(-90deg);
+    transform-origin: 50% 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-tab-contents-left {
+    -webkit-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: auto;
+    background: #ececec;
+}
+
+.aiom-adwaita-ui-tab-content-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.5em 1em;
+    display: none;
+}
+
+/* Tab: Right */
+.aiom-adwaita-ui-tabpane-right {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    height: 300px;
+}
+
+.aiom-adwaita-ui-tabs-right {
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    margin-top: 0;
+}
+
+.aiom-adwaita-ui-tab-right {
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border: 1px solid #b6b6b3;
+    margin: 0;
+    height: 80px;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-tab-right:hover {
+    border-right: 2px solid #a7a7a7;
+    background: #d0d0d0;
+}
+
+.aiom-adwaita-ui-tab-right[data-selected="true"] {
+    border-left: 1px solid transparent;
+    border-right: 3px solid #6495ED;
+}
+
+.aiom-adwaita-ui-tab-right:not(:first-child) {
+    margin-top: -1px;
+}
+
+.aiom-adwaita-ui-tab-right a {
+    display: block;
+    transform: translateY(200%) rotate(90deg);
+    transform-origin: 50% 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-tab-contents-right {
+    -webkit-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: auto;
+    background: #ececec;
+}
+
+.aiom-adwaita-ui-tab-content-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.5em 1em;
+    display: none;
+}
+
+/* Checkbox */
+.aiom-adwaita-ui-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    padding-top: 4px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    user-select: none;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.aiom-adwaita-ui-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #e8e8e7;
+    border: 1px solid #9c9c9c;
+    border-radius: 0.25em;
+    transition: all .4s;
+}
+
+.aiom-adwaita-ui-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.aiom-adwaita-ui-checkbox:hover input ~ .aiom-adwaita-ui-checkmark {
+    background: linear-gradient(180deg, #f4f4f4 0.0%, #f9f9f9 100.0%);
+}
+
+.aiom-adwaita-ui-checkbox input:checked ~ .aiom-adwaita-ui-checkmark {
+    background: #eee;
+}
+
+.aiom-adwaita-ui-checkbox input:checked ~ .aiom-adwaita-ui-checkmark:after {
+    display: block;
+}
+
+.aiom-adwaita-ui-checkbox .aiom-adwaita-ui-checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #545557;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Radio */
+.aiom-adwaita-ui-radio {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    padding-top: 4px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    user-select: none;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.aiom-adwaita-ui-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #e8e8e7;
+    border: 1px solid #9c9c9c;
+    border-radius: 100%;
+    transition: all .4s;
+}
+
+.aiom-adwaita-ui-radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.aiom-adwaita-ui-radio:hover input ~ .aiom-adwaita-ui-radio-checkmark {
+    background: linear-gradient(180deg, #f4f4f4 0.0%, #f9f9f9 100.0%);
+}
+
+.aiom-adwaita-ui-radio input:checked ~ .aiom-adwaita-ui-radio-checkmark {
+    background: #eee;
+}
+
+.aiom-adwaita-ui-radio input:checked ~ .aiom-adwaita-ui-radio-checkmark:after {
+    display: block;
+}
+
+.aiom-adwaita-ui-radio .aiom-adwaita-ui-radio-checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #545557;
+    border-radius: 100%;
+}
+
+/* Slider */
+.aiom-adwaita-ui-slider {
+    position: relative;
+    cursor: pointer;
+    width: 256px;
+    height: 24px;
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-slider label,
+.aiom-adwaita-ui-slider-thumb {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-slider label {
+    left: 12px;
+    width: 256px;
+    height: 5px;
+    background: #cacac8;            
+    border: 1px solid #b7b7b4;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-slider label span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    background: #6495ED;
+}
+
+.aiom-adwaita-ui-slider-thumb {
+    top: -9px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #9c9c9c;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #e4e4e3 0.0%, #f7f7f7 100.0%);
+}
+
+.aiom-adwaita-ui-slider-thumb:hover {
+    background: linear-gradient(180deg, #f4f4f4 0.0%, #f9f9f9 100.0%);
+}
+
+.aiom-adwaita-ui-slider-thumb:active {
+    border: 1px solid #234d78;
+}
+
+.aiom-adwaita-ui-slider-value-indicator {
+    background: #6495ED;
+}
+
+/* Progress */
+.aiom-adwaita-ui-progress {
+    position: relative;
+    width: 256px;
+    height: 24px;
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-progress label {
+    position: absolute;
+    display: inline-block;
+    left: 12px;
+    width: 256px;
+    height: 5px;
+    background: #cacac8;            
+    border: 1px solid #b7b7b4;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-progress label span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    background: #6495ED;
+}
+
+.aiom-adwaita-ui-progress-value-indicator {
+    background: #6495ED;
+    transition: all 0.4s;
+}
+
+/* Progress Spinner */
+.aiom-adwaita-ui-progress-spinner {
+    text-align: center;
+    height: 64px;
+}
+
+.aiom-adwaita-ui-progress-spinner > span {
+    display: inline-block;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #606060;
+    width: 32px;
+    height: 32px;
+    animation: aiom-adwaita-ui-progress-spinner-spin 2s linear infinite;
+}
+
+@keyframes aiom-adwaita-ui-progress-spinner-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Breadcrumb */
+.aiom-adwaita-ui-breadcrumb ul {
+    list-style: none;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    color: #2d3335;
+    padding-left: 0px;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1.25em 0.5em 1.5em;
+    margin: 0;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    margin-left: -0.4em;
+    height: 1.5em;
+    vertical-align: top;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li a {
+    text-decoration: none;
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li:first-child {
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li:last-child {
+    border-radius: 0 0.25em 0.25em 0;
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li:not(:last-child):after {
+    display: inline-block;
+    content: "▸";
+    margin-left: 1em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-breadcrumb ul li:not(:last-child):hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+/* Table */
+.aiom-adwaita-ui-table {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.aiom-adwaita-ui-table th {
+    font-weight: normal;
+}
+
+.aiom-adwaita-ui-table thead tr {
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+}
+
+.aiom-adwaita-ui-table thead th:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-button:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-table th,
+.aiom-adwaita-ui-table td {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-table th:after {
+    content: '▾';
+    display: inline-block;
+    margin-left: 0.5em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-table,
+.aiom-adwaita-ui-table th {
+    border: 1px solid #b6b6b3;
+}
+
+.aiom-adwaita-ui-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.aiom-adwaita-ui-table tbody tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+.aiom-adwaita-ui-table tbody tr {
+    transition: all 0.3s;
+}
+
+.aiom-adwaita-ui-table tbody tr:hover {
+    background: #f7f7be;
+}
+
+.aiom-adwaita-ui-table-row-selected {
+    background: #6495ED !important;
+    color: #ffffff !important;
+}
+
+/* TreeView */
+.aiom-adwaita-ui-treeview {
+    display: block;
+    padding: 0.5em 0;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    background: #ffffff;
+    border: 1px solid #b6b6b3;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-treeview .aiom-adwaita-ui-treeview {
+    border: none;
+}
+
+.aiom-adwaita-ui-tree-root {
+    text-decoration: none;
+    color: #2d3335;
+    padding: 0.5em;
+}
+
+.aiom-adwaita-ui-tree-root[data-isCollpased="true"]:before {
+    content: '⯆';
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-tree-root[data-isCollpased="false"]:before {
+    content: '⯈';
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-tree-root-contents {
+    margin-left: 2.3em;
+    transition: all 0.5s;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+/* Context Menu */
+.aiom-adwaita-ui-context-menu {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #dadada;
+    z-index: 102;
+}
+
+.aiom-adwaita-ui-context-menu li {
+    position: relative;
+    display: block;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.aiom-adwaita-ui-context-menu li > span {
+    vertical-align: middle;
+}
+
+.aiom-adwaita-ui-context-menu > li:hover {
+    background: #6495ED;
+}
+
+.aiom-adwaita-ui-context-menu > li:hover span {
+    color: #ffffff;
+}
+
+.aiom-adwaita-ui-context-menu-seperator:not(:last-child) {
+    border-bottom: 1px solid #dadada;
+}
+
+.aiom-adwaita-ui-context-menu li span {
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-menu-item {
+    width: 100px;
+    color: #2d3335;
+}
+
+.aiom-adwaita-ui-menu-item-shortcut {
+    text-align: right;
+    width: 60px;
+    color: #91918c;
+}
+
+.aiom-adwaita-ui-menu-item-disabled > span {
+    color: #91918c;
+}
+
+.aiom-adwaita-ui-menu-item-icon {
+    display: inline-block;
+    text-align: left;
+    margin-right: 0.25em;
+    width: 16px !important;
+}
+
+.aiom-adwaita-ui-menu-item-disabled img {
+    filter: grayscale(100%);
+}
+
+.aiom-adwaita-ui-submenu:after {
+    content: '▶';
+    color: #91918c;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.aiom-adwaita-ui-submenu:hover:after {
+    color: #ffffff;
+}
+
+/* Submenu */
+.aiom-adwaita-ui-submenu-parent {
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    list-style: none;
+    top: 0px;
+    left: 100%;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    width: 200px;
+    color: #2d3335;
+    width: 100%;
+}
+
+.aiom-adwaita-ui-submenu-parent > li {
+    padding: 0.5em 1em;
+}
+
+.aiom-adwaita-ui-submenu:hover > .aiom-adwaita-ui-submenu-parent {
+    display: block;
+}
+
+.aiom-adwaita-ui-submenu li .aiom-adwaita-ui-menu-item {
+    color: #2d3335 !important;
+    width: 100px;
+}
+
+.aiom-adwaita-ui-submenu-parent li span {
+    display: inline-block !important;
+}
+
+.aiom-adwaita-ui-submenu li .aiom-adwaita-ui-menu-item-shortcut {
+    color: #91918c !important;
+}
+
+.aiom-adwaita-ui-submenu-parent > li:hover {
+    background: #6495ED;
+}
+
+.aiom-adwaita-ui-submenu-parent > li:hover > span {
+    color: #ffffff !important;
+}
+
+/* Menubar, Menubar Menu Items */
+.aiom-adwaita-ui-menubar {
+    padding: 0 0.25em;
+    margin: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #dadada;
+}
+
+.aiom-adwaita-ui-menubar-menuitems {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    color: #2d3335;
+    background: #ffffff;
+}
+
+.aiom-adwaita-ui-menubar-menuitem {
+    padding: 0.5em 1em;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.aiom-adwaita-ui-menubar-menuitem:hover {
+    background: #6495ED;
+    color: #ffffff;
+}
+
+.aiom-adwaita-ui-menubar-menuitem {
+    position: relative;
+}
+
+.aiom-adwaita-ui-menubar-menu {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #ffffff;
+    display: none;
+}
+
+.aiom-adwaita-ui-menubar-menuitem:hover > .aiom-adwaita-ui-menubar-menu {
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-menubar-menu > li {
+    position: relative;
+    padding: 0.5em 1em;
+    min-width: 210px;
+    transition: background-color 0.3s;
+}
+
+.aiom-adwaita-ui-menubar-menu > li:hover {
+    background: #6495ED;
+    color: #ffffff;
+}
+
+.aiom-adwaita-ui-menubar-menu > li:hover > span {
+    color: #ffffff;
+}
+
+.aiom-adwaita-ui-menubar-menu > li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aiom-adwaita-ui-menubar-menu .aiom-adwaita-ui-menu-item {
+    width: 100px;
+}
+
+.aiom-adwaita-ui-menubar-menu .aiom-adwaita-ui-menu-item-shortcut {
+    width: 60px;
+}
+
+.aiom-adwaita-ui-menubar-menu > li:hover label {
+    color: #ffffff;
+}
+
+/* Checkbox Menu Item */
+.aiom-adwaita-ui-menuitem-checkbox {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    display: block;
+}
+
+.aiom-adwaita-ui-menuitem-checkbox input {
+    display: none;
+}
+
+.aiom-adwaita-ui-menubar-menu > li:hover .aiom-adwaita-ui-menuitem-checkmark {
+    border-left-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.aiom-adwaita-ui-menuitem-checkbox:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+    margin-right: 1em;
+}
+
+.aiom-adwaita-ui-menuitem-checkmark {
+    position: absolute;
+    left: 3px;
+    top: 0px;
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    transform: rotate(-45deg);
+    border-left-color: #2d3335;
+    border-bottom-color: #2d3335;
+}
+
+.aiom-adwaita-ui-menuitem-checkbox input:checked + .aiom-adwaita-ui-menuitem-checkmark {
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+}
+
+/* Radio Menu Item */
+.aiom-adwaita-ui-menuitem-radio {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    display: block;
+}
+
+.aiom-adwaita-ui-menuitem-radio input {
+    display: none;
+}
+
+.aiom-adwaita-ui-menubar-menu > li:hover .aiom-adwaita-ui-menuitem-radio-checkmark {
+    background: #ffffff !important;
+}
+
+.aiom-adwaita-ui-menuitem-radio:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+    margin-right: 1em;
+}
+
+.aiom-adwaita-ui-menuitem-radio-checkmark {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.aiom-adwaita-ui-menuitem-radio input:checked + .aiom-adwaita-ui-menuitem-radio-checkmark {
+    width: 8px;
+    height: 8px;
+    background: #2d3335;
+}
+
+/* Control Group */
+.aiom-adwaita-ui-control-group {
+    position: relative;
+    padding: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    border: 1px solid #a9a9a9;
+    background: #e8e8e7;
+    border-radius: 0.25em;
+}
+
+.aiom-adwaita-ui-control-group > .aiom-adwaita-ui-label {
+    position: absolute;
+    left: 1.5em;
+    top: -0.5em;
+    background: #e8e8e7;
+    padding: 0 0.5em;
+}
+
+/* Combobox */
+.aiom-adwaita-ui-combobox {
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-radius: 0.25em;
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+    color: #2d3335;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    position: relative;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-combobox:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '▼';
+    margin-left: 0.5em;
+    color: #808080;
+}
+
+.aiom-adwaita-ui-combobox:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-combobox:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-combobox-value {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-combobox-list {
+    display: none;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #ffffff;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    transition: all 0.3s;
+    z-index: 102;
+}
+
+.aiom-adwaita-ui-combobox-list > li {
+    display: block;
+    padding: 0.5em 1em;
+    width: 200px;
+    text-align: left;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.aiom-adwaita-ui-combobox-list > li:hover {
+    background: #6495ED;
+    color: #ffffff;
+}
+
+/* Text Area */
+.aiom-adwaita-ui-textarea {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    border: 1px solid #b6b6b3;
+    outline: none;
+}
+
+/* Tooltip */
+.aiom-adwaita-ui-tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    display: none;
+    position: absolute;
+    transition: all 0.4s;
+    z-index: 1000;
+}
+
+/* SplitPane (Vertical) */
+.aiom-adwaita-ui-splitpane-vertical-handle {
+    z-index: 2;
+    display: block;
+    height: 8px !important;
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    cursor: ns-resize;
+    border-top: 1px solid #b6b6b3;
+    border-bottom: 1px solid #b6b6b3;
+}
+
+.aiom-adwaita-ui-splitpane-vertical-handle:hover {
+    background: linear-gradient(180deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-splitpane-vertical-handle:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-splitpane-vertical {
+    position: relative;
+    display: block;
+}
+
+.aiom-adwaita-ui-splitpane-vertical-handle,
+.aiom-adwaita-ui-splitpane-vertical-top-content,
+.aiom-adwaita-ui-splitpane-vertical-bottom-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.aiom-adwaita-ui-splitpane-vertical-top-content,
+.aiom-adwaita-ui-splitpane-vertical-bottom-content {
+    z-index: 1;
+}
+
+/* SplitPane (Horizontal) */
+.aiom-adwaita-ui-splitpane-horizontal-handle {
+    z-index: 2;
+    display: block;
+    width: 8px !important;
+    background: linear-gradient(-90deg, #fffdfd 0.0%, #d0d0ce 100.0%, #f2f2f2 2%, #e7e7e6 3%, #e7e7e6 4%);
+    cursor: ew-resize;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+}
+
+.aiom-adwaita-ui-splitpane-horizontal-handle:hover {
+    background: linear-gradient(-90deg, #fffdfd 0.0%, #dededd 100.0%);
+}
+
+.aiom-adwaita-ui-splitpane-horizontal-handle:active {
+    background: #d9d9d7;
+}
+
+.aiom-adwaita-ui-splitpane-horizontal {
+    position: relative;
+    display: block;
+}
+
+.aiom-adwaita-ui-splitpane-horizontal-handle,
+.aiom-adwaita-ui-splitpane-horizontal-left-content,
+.aiom-adwaita-ui-splitpane-horizontal-right-content {
+    position: absolute;
+    left: 0;
+    height: 300px;
+}
+
+.aiom-adwaita-ui-splitpane-horizontal-left-content,
+.aiom-adwaita-ui-splitpane-horizontal-right-content {
+    z-index: 1;
+}
+
+/* Dialog Message */
+.aiom-adwaita-ui-dialog {
+    width: 512px;
+    background: #e8e8e7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    display: none;
+    border: 1px solid #b6b6b3;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: #2d3335;
+    border-radius: 0.5em;
+}
+
+.aiom-adwaita-ui-dialog-close {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 6px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-dialog-close:hover {
+    border-top: 1px solid #b6b6b3;
+    border-left: 1px solid #b6b6b3;
+    border-right: 1px solid #b6b6b3;
+    border-bottom: 1px solid #91918c;
+}
+
+.aiom-adwaita-ui-dialog-title-bar {
+    background: linear-gradient(180deg, #f5f5f4 0.0%, #e6e4e3 100.0%);
+    border-bottom: 1px solid #c2c1be;
+    vertical-align: baseline;
+    text-align: center;
+    border-radius: 0.5em 0.5em 0 0;
+    cursor: move;
+}
+
+.aiom-adwaita-ui-dialog-header {
+    display: inline-block;
+    width: 75%;
+    font-weight: bold;
+    padding-left: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.aiom-adwaita-ui-dialog-close-container {
+    display: inline-block;
+    width: 22%;
+    text-align: right;
+}
+
+.aiom-adwaita-ui-dialog-buttons {
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+
+.aiom-adwaita-ui-dialog-body {
+    min-height: 64px;
+}
+
+.aiom-adwaita-ui-dialog-icon,
+.aiom-adwaita-ui-dialog-message {
+    padding: 0.5em;
+    display: inline-block;
+    margin: 0;
+}
+
+.aiom-adwaita-ui-dialog-icon {
+    width: 15%;
+    float: left;
+    text-align: center;
+}
+
+.aiom-adwaita-ui-dialog-icon {
+    display: block;
+    margin-top: 1em;
+}
+
+.aiom-adwaita-ui-dialog-message {
+    width: 78%;
+    float: right;
+}
+
+@media only screen and (max-width: 512px) {
+    .aiom-adwaita-ui-dialog {
+        width: 90%;
+    }
+    
+    .aiom-adwaita-ui-dialog-icon,
+    .aiom-adwaita-ui-dialog-message {
+        display: block !important;
+        width: 90%;
+    }
+}
+
+/* Icon */
+.aiom-adwaita-ui-button-icon {
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+/* Color Chooser */
+.aiom-adwaita-ui-color-chooser-input {
+    padding: 0.5em;
+    height: 2.5em;
+}
+
+.aiom-adwaita-ui-color-chooser-input > * {
+    margin-bottom: 1.5em;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-close {
+    display: none;
+}
+
+.aiom-adwaita-ui-color-chooser-header-button {
+    display: inline-block;
+}
+
+.aiom-adwaita-ui-color-chooser-header-button {
+    width: 90px;
+    max-height: 45px;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.aiom-adwaita-ui-color-chooser-header-button span {
+    display: inline-block !important;
+    height: 40px !important;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-header {
+    width: 80%;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-title-bar {
+    height: 4em;
+}
+
+.aiom-adwaita-ui-color-chooser-predefined-color {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin: 0.10em;
+    border-radius: 0.5em;
+    box-shadow: inset 0px 0px 5px 0px rgba(26, 26, 26, 1.0);
+    border: 3px solid #e7e7e6;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-color-chooser-predefined-color-row {
+    text-align: center;
+}
+
+.aiom-adwaita-ui-color-chooser-predefined-color-row:first-child {
+    margin-top: 0.5em;
+}
+
+.aiom-adwaita-ui-color-chooser-predefined-color-row:last-child {
+    margin-bottom: 0.5em;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-label {
+    display: block;
+    margin-left: 1.65em;
+    margin-right: 1.65em;
+    font-weight: bold;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-buttons {
+    margin-top: 0.25em;
+    margin-left: 1.65em;
+    margin-right: 1.65em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-buttons .aiom-adwaita-ui-button {
+    padding: 0.45em 1.0em;
+    cursor: pointer;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-buttons .aiom-adwaita-ui-button input[type="color"] {
+    display: none;
+}
+
+.aiom-adwaita-ui-color-chooser-custom-colors-pane,
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-buttons > div:last-child {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.aiom-adwaita-ui-color-chooser .aiom-adwaita-ui-dialog-buttons > div:last-child {
+    position: relative;
+}
+
+.aiom-adwaita-ui-color-chooser-custom-colors-pane .aiom-adwaita-ui-color-chooser-predefined-color {
+    margin-bottom: 0;
+    margin-right: 0.30em;
+}
+
+.aiom-adwaita-ui-color-chooser-custom-color {
+    position: absolute;
+    height: 32px;
+    width: 40px;
+    padding: 0 !important;
+    margin-top: 0.15em;
+}
+
+.aiom-adwaita-ui-color-chooser-custom-color * {
+    vertical-align: central;
+    margin-bottom: 0.5em;
+}
+
