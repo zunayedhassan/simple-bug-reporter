@@ -3,7 +3,15 @@ A bug reporter that generates and reads report via XML file
 
 ![Preview](https://raw.githubusercontent.com/zunayedhassan/simple-bug-reporter/master/Preview.png)
 
+## Instruction
+
+- Create your XML file and upload to *assets/files/your_xml_file_name.xml*
+- Upload images to *asstes/images/screenshots.jpg*
+- Upload videos to *assets/videos/description.mp4*
+- 
+
 ## Sample XML File
+
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <BugReports>
