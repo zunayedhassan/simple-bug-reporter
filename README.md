@@ -1,4 +1,4 @@
-# simple-bug-reporter
+# Simple Bug Reporter
 A bug reporter that generates and reads report via XML file
 
 ![Preview](https://raw.githubusercontent.com/zunayedhassan/simple-bug-reporter/master/Preview.png)
