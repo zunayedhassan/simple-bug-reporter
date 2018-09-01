@@ -8,7 +8,6 @@ A bug reporter that generates and reads report via XML file
 - Create your XML file and upload to *assets/files/your_xml_file_name.xml*
 - Upload images to *asstes/images/screenshots.jpg*
 - Upload videos to *assets/videos/description.mp4*
-- 
 
 ## Sample XML File
 
